@@ -17,6 +17,7 @@
                                    ["do" "clean"
                                     ["with-profile" "advanced" "cljsbuild" "once"]]}
             :jvm-opts ["-XX:+IgnoreUnrecognizedVMOptions" "--add-modules=java.xml.bind"]
+            :figwheel {:server-port 4444}
             :profiles {:dev {:dependencies [[figwheel-sidecar "0.5.14"]
                                             [com.cemerick/piggieback "0.2.1"]]
                              :source-paths ["src" "env/dev"]

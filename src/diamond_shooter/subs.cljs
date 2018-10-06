@@ -2,6 +2,11 @@
   (:require [re-frame.core :refer [reg-sub]]))
 
 (reg-sub
-  :get-greeting
+  :get-current-screen
   (fn [db _]
-    (:greeting db)))
+    (:current-screen db)))
+
+(reg-sub
+ :get-start-screen
+ (fn [db _]
+   (:start-screen db)))
